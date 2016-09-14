@@ -9,6 +9,8 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import { syncHistoryWithStore, routerReducer } from 'react-router-redux'
 injectTapEventPlugin();
 
+document.body.style.margin = 0;
+
 const store = createStore(allMethod);
 const history = syncHistoryWithStore(browserHistory, store)
 
